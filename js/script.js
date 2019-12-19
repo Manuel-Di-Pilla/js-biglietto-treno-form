@@ -37,8 +37,8 @@ genera.addEventListener('click',
     document.getElementById('Prezzo-biglietto').innerHTML = prezzoTotale;
 
     var biglietto = document.getElementById('biglietto');
-    biglietto.classlist.remove('hidden');
-    biglietto.classlist.add('visible');
+    biglietto.classList.remove('hidden');
+    biglietto.classList.add('visible');
 });
 var annulla = document.getElementById('annulla');
 annulla.addEventListener('click',
@@ -51,5 +51,8 @@ annulla.addEventListener('click',
     document.getElementById('nome').value = '';
     document.getElementById('km').value = '';
     document.getElementById('fascia').value = '';
+    var biglietto = document.getElementById('biglietto');
+    biglietto.classList.remove('visible');
+    biglietto.classList.add('hidden');
   }
 )
