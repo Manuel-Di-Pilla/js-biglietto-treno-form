@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Js treno</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>calcola il prezzo del tuo biglietto</h1>
+      <div class="calc-price">
+        <div class="data">
+          <div class="nome">
+            <h4>Nome e Cognome</h4>
+            <input type="text" name="" value="" placeholder="Nome e Cognome">
+          </div>
+          <div class="km">
+            <h4>Km da percorrere</h4>
+            <input type="text" name="" value="" placeholder="Km">
+          </div>
+          <div class="età">
+            <h4>Fascia d'età</h4>
+            <select class="età" name="">
+              <option value="" disabled selected>Seleziona fascia di età</option>
+              <option value="">Minorenne</option>
+              <option value="">Maggiorenne</option>
+              <option value="">Over 65</option>
+            </select>
+          </div>
+        </div>
+        <div class="button">
+          <button>Genera</button>
+          <button>Annulla</button>
+        </div>
+      </div>
+      <h1>Il Tuo Biglietto</h1>
+      <div class="print">
+        <h4>Dettaglio Passeggioro</h4>
+        <div class="general-info">
+          <div class="nome-passeggero">
+            <h3>nome passeggero</h3>
+            <h5 id="nome"></h5>
+          </div>
+          <div class="ticket">
+            <table>
+              <tr>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice CP</th>
+                <th>Costo Biglietto</th>
+              </tr>
+              <tr>
+                <td id="Offerta"></td>
+                <td id="carrozza"></td>
+                <td id="Codice CP"></td>
+                <td id="Prezzo biglietto"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
